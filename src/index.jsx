@@ -1,16 +1,81 @@
-import { createRoot } from "react-dom/client"
+// ReactFacts Project from Learn React class on scrimba.com
 
+import { createRoot } from "react-dom/client"
 const root = createRoot(document.getElementById("root"))
+
+function Header() {
+    return (
+        <header>
+            <img src="/src/assets/react-logo.png" width="40px" alt="React logo" />
+        </header>
+    )
+}
+
+function MainContent() {
+    return (
+        <main>
+            <h1>Fun facts about React</h1>
+            <ul>
+                <li>Was first released in 2013</li>
+                <li>Was originally created by Jordan Walke</li>
+                <li>Has well over 100K stars on GitHub</li>
+                <li>Is maintained by Meta</li>
+                <li>Powers thousands of enterprise apps, including mobile apps</li>
+            </ul>
+        </main>
+    )
+}
+
+function Page() {
+    return (
+        <>
+            <Header />
+            <MainContent />
+        </>
+    )
+}
+
 root.render(
-    <main>
-        <img src="/src/assets/react-logo.png" width="40px"></img>
-        <h1>Fun facts about React</h1>
-        <ul>
-            <li>Was first released in 2013</li>
-            <li>Was originally created by Jordan Walke</li>
-            <li>Has well over 100K stars on GitHub</li>
-            <li>Is maintained by Meta</li>
-            <li>Powers thousands of enterprise apps, including mobile apps</li>
-        </ul>
-    </main>
+    <Page />
 )
+
+// function Header() {
+//     return (
+//         <header>
+//             <img src="/src/assets/react-logo.png" width="40px" alt="React logo" />
+//         </header>
+//     )
+// }
+
+// function MainContent() {
+//     return (
+//         <main>
+//             <h1>Fun facts about React</h1>
+//             <ul>
+//                 <li>Was first released in 2013</li>
+//                 <li>Was originally created by Jordan Walke</li>
+//                 <li>Has well over 100K stars on GitHub</li>
+//                 <li>Is maintained by Meta</li>
+//                 <li>Powers thousands of enterprise apps, including mobile apps</li>
+//             </ul>
+//         </main>
+//     )
+// }
+
+// function Footer() {
+//     <footer>
+//         <small>© 2024 Ziroll development. All rights reserved.</small>
+//     </footer>
+// }
+
+// function Page() {
+//     <>
+//         <Header />
+//         <MainContent />
+//         <Footer />
+//     </>
+// }
+
+// root.render(
+//     <Page />
+// )
