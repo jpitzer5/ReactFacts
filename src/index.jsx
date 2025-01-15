@@ -5,8 +5,15 @@ const root = createRoot(document.getElementById("root"))
 
 function Header() {
     return (
-        <header>
-            <img src="/src/assets/react-logo.png" width="40px" alt="React logo" />
+        <header className="header">
+            <img src="/src/assets/react-logo.png" className="nav-logo" alt="React logo" />
+            <nav>
+                <ul className="nav-list">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
         </header>
     )
 }
@@ -38,44 +45,3 @@ function Page() {
 root.render(
     <Page />
 )
-
-// function Header() {
-//     return (
-//         <header>
-//             <img src="/src/assets/react-logo.png" width="40px" alt="React logo" />
-//         </header>
-//     )
-// }
-
-// function MainContent() {
-//     return (
-//         <main>
-//             <h1>Fun facts about React</h1>
-//             <ul>
-//                 <li>Was first released in 2013</li>
-//                 <li>Was originally created by Jordan Walke</li>
-//                 <li>Has well over 100K stars on GitHub</li>
-//                 <li>Is maintained by Meta</li>
-//                 <li>Powers thousands of enterprise apps, including mobile apps</li>
-//             </ul>
-//         </main>
-//     )
-// }
-
-// function Footer() {
-//     <footer>
-//         <small>© 2024 Ziroll development. All rights reserved.</small>
-//     </footer>
-// }
-
-// function Page() {
-//     <>
-//         <Header />
-//         <MainContent />
-//         <Footer />
-//     </>
-// }
-
-// root.render(
-//     <Page />
-// )
