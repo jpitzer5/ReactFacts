@@ -2,20 +2,10 @@
 
 import { createRoot } from "react-dom/client"
 
-import Header from "./Header"
-import MainContent from "./MainContent"
+import App from "./App"
 
 const root = createRoot(document.getElementById("root"))
 
-function Page() {
-    return (
-        <>
-            <Header />
-            <MainContent />
-        </>
-    )
-}
-
 root.render(
-    <Page />
+    <App />
 )
